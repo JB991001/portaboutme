@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.profile img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: -200px 0;
+}
+
+.info {
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* 스크롤 안내 표시 */
+.scroll-indicator {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    font-size: 1rem;
+    color: #bbb;
+    writing-mode: vertical-rl; /* 세로 방향 텍스트 */
+    animation: blink 1.5s infinite;
+}
+
+/* 홈 버튼 스타일 */
+.home-link {
+    position: absolute;
+    top: 20px; /* 왼쪽 상단 위치 */
+    left: 20px; /* 왼쪽 상단 위치 */
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* 배경색 */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px; /* 둥근 네모 */
+    font-size: 20px;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.home-link:hover {
+    color: #4caf50; /* Hover 시 색상 변경 */
+    text-decoration: underline;
+    background-color: rgba(76, 175, 80, 0.2); /* Hover 시 배경색 변경 */
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
