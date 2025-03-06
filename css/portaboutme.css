@@ -44,8 +44,8 @@ h1 {
 /* 스크롤 안내 표시 */
 .scroll-indicator {
     position: fixed;
-    right: 20px;
-    bottom: 50px;
+    right: 700px;
+    bottom: 550px;
     font-size: 1rem;
     color: #bbb;
     writing-mode: vertical-rl; /* 세로 방향 텍스트 */
